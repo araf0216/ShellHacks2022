@@ -1,0 +1,311 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  box-shadow: 1px 1px 24px 0 rgb(6 26 54 / 12%);
+}
+
+.Navbar-right button{
+  border: none;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.Navbar-left h1 {
+  margin: 0;
+}
+
+.Navbar-right button:first-child {
+  background-color: black;
+  color: white;
+}
+
+.Navbar-right button:nth-child(2){
+  background-color: rgb(138, 208, 231);;
+}
+
+.Navbar-right button:hover {
+  scale: 1.08;
+}
+
+.Navbar-right a {
+  text-decoration: none;
+  color: white;
+}
+
+.Navbar-right a:hover {
+  color: white;
+}
+
+.Call-to-action {
+  position: relative; 
+  height: 800px;
+  margin: 1px 0 0 0;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Call-to-action::before {
+  content: "";
+  background-image: url("./assets/call-to-action-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.Call-to-action div{
+  position: relative;
+}
+
+.Call-to-action-sub {
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+.Call-to-action-sub h2 {
+  font-size: 3.4rem;
+  text-align: left;
+}
+
+.Call-to-action-sub button {
+  padding: 1.4rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(138, 208, 231);
+  cursor: pointer;
+  transition: all 0.1s;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.Call-to-action-sub button:hover {
+  scale: 1.08;
+}
+
+.Call-to-action-sub p {
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 576px) {
+  .Call-to-action-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Call-to-action-sub h2 {
+    text-align: center;
+  }
+}
+
+.Download-links {
+  margin: 0rem 1rem;
+}
+
+.Download-links img {
+  width: 200px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.Download-links img:nth-child(2) {
+  width: 230px;
+}
+
+.Description {
+  display: flex;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.Description img {
+  width: 375px; 
+  height: 525px; 
+}
+
+.Description h2 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin: 1.4rem 0;
+}
+
+.Description p {
+  margin: 1.4rem 0;
+  font-size: 1.6rem;
+  opacity: 0.7;
+  line-height: 36px;
+}
+
+@media (max-width: 768px){
+  .Description {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Ratings {
+  background-color: rgb(49, 48, 48);
+  height: 50vh;
+  color: white;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Ratings h2 {
+  font-size: 2rem;
+}
+
+.Ratings-stars {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stars img {
+  width: 30px;
+  height: 30px;
+}
+
+.stars-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.Ratings-text {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+  .Ratings {
+    padding: 2rem 2rem;
+  }
+  .Ratings-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Sign-up,
+.Sign-in {
+  height: 90vh;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Sign-up-text h1,
+.Sign-in-text h1{
+  text-align: center;
+  margin: 1rem;
+  font-size: 2.4rem;
+}
+
+.Sign-in-text h1 {
+  margin-bottom: 3rem;
+}
+
+.Sign-up-text h2 {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.8rem;
+  opacity: 0.6;
+}
+
+.SignUp-form,
+.SignIn-form {
+  width: 700px;
+}
+
+.SignUp-form button,
+.SignIn-form button {
+  background-color: rgb(138, 208, 231);
+  border: none;
+  padding: 1rem;
+}
+
+@media (max-width: 768px){
+  .SignUp-form,
+  .SignIn-form  {
+    width: 400px;
+  }
+}
+
+.Subscriptions {
+padding: 2rem 3rem;
+}
+
+.Subscriptions h3 {
+  font-size: 3rem;
+  }
