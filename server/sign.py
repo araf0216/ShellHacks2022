@@ -7,7 +7,7 @@ from flask import Flask, render_template, request
 sign = Flask(__name__)
 
 config = {
-    "apiKey": "AIzaSyAam6IUJFdKZ0OmGHI0aRTk_s4Xe5jLcTU",
+    "apiKey": "...",
     "authDomain": "subalert-fa7ea.firebaseapp.com",
     "databaseURL": "https://subalert-fa7ea-default-rtdb.firebaseio.com/",
     "storageBucket": "subalert-fa7ea.appspot.com"
